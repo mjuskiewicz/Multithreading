@@ -18,7 +18,7 @@ namespace ConsoleCalculator
     {
         public void Start()
         {
-            Console.WriteLine("Simple Calculator 22");
+            Console.WriteLine("Simple Calculator");
         }
     }
 }
