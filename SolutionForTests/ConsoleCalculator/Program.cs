@@ -18,7 +18,8 @@ namespace ConsoleCalculator
     {
         public void Start()
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine("Simple Calculator");
+
         }
     }
 }
