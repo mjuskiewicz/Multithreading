@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerConsumerComplexExam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarrierExample", "BarrierExample\BarrierExample.csproj", "{FD4443BF-C244-4A70-ABFB-ADD4ABE9C40F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManualResetEventSlimExample", "ManualResetEventSlimExample\ManualResetEventSlimExample.csproj", "{5E6C20C3-442D-4DBC-8A06-37E9E23056AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{FD4443BF-C244-4A70-ABFB-ADD4ABE9C40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD4443BF-C244-4A70-ABFB-ADD4ABE9C40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD4443BF-C244-4A70-ABFB-ADD4ABE9C40F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E6C20C3-442D-4DBC-8A06-37E9E23056AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6C20C3-442D-4DBC-8A06-37E9E23056AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6C20C3-442D-4DBC-8A06-37E9E23056AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6C20C3-442D-4DBC-8A06-37E9E23056AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,5 +43,6 @@ Global
 		{15B2EA46-0768-446D-B6AC-3A722249772E} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
 		{59F3EFC3-2D35-40CB-A1BF-485DA2DE69FF} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
 		{FD4443BF-C244-4A70-ABFB-ADD4ABE9C40F} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
+		{5E6C20C3-442D-4DBC-8A06-37E9E23056AE} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
 	EndGlobalSection
 EndGlobal

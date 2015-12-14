@@ -68,7 +68,6 @@ namespace BarrierExample
                             waitCounter = 0;
                             Console.WriteLine(string.Empty);
                             Monitor.PulseAll(synch);
-                            
                         }
                         else
                         {
