@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarrierExample", "BarrierEx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManualResetEventSlimExample", "ManualResetEventSlimExample\ManualResetEventSlimExample.csproj", "{5E6C20C3-442D-4DBC-8A06-37E9E23056AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormUiUpdate", "WindowsFormUiUpdate\WindowsFormUiUpdate.csproj", "{46E2A827-D482-46CB-A875-A858A273FC41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{5E6C20C3-442D-4DBC-8A06-37E9E23056AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E6C20C3-442D-4DBC-8A06-37E9E23056AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E6C20C3-442D-4DBC-8A06-37E9E23056AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E2A827-D482-46CB-A875-A858A273FC41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E2A827-D482-46CB-A875-A858A273FC41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E2A827-D482-46CB-A875-A858A273FC41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E2A827-D482-46CB-A875-A858A273FC41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +50,6 @@ Global
 		{59F3EFC3-2D35-40CB-A1BF-485DA2DE69FF} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
 		{FD4443BF-C244-4A70-ABFB-ADD4ABE9C40F} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
 		{5E6C20C3-442D-4DBC-8A06-37E9E23056AE} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
+		{46E2A827-D482-46CB-A875-A858A273FC41} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
 	EndGlobalSection
 EndGlobal
