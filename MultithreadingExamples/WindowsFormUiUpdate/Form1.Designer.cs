@@ -32,7 +32,6 @@
             this.buttonBlue = new System.Windows.Forms.Button();
             this.pictureBoxBlue = new System.Windows.Forms.PictureBox();
             this.pictureBoxRed = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBlue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRed)).BeginInit();
             this.SuspendLayout();
@@ -77,22 +76,11 @@
             this.pictureBoxRed.TabIndex = 3;
             this.pictureBoxRed.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(860, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(999, 520);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBoxRed);
             this.Controls.Add(this.pictureBoxBlue);
             this.Controls.Add(this.buttonBlue);
@@ -111,7 +99,6 @@
         private System.Windows.Forms.Button buttonBlue;
         private System.Windows.Forms.PictureBox pictureBoxBlue;
         private System.Windows.Forms.PictureBox pictureBoxRed;
-        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -52,10 +52,5 @@ namespace WindowsFormUiUpdate
             var redThread = new Thread(SimpleInvokeExample);
             redThread.Start();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("iza");
-        }
     }
 }
