@@ -32,6 +32,7 @@
             this.buttonBlue = new System.Windows.Forms.Button();
             this.pictureBoxBlue = new System.Windows.Forms.PictureBox();
             this.pictureBoxRed = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBlue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRed)).BeginInit();
             this.SuspendLayout();
@@ -39,9 +40,9 @@
             // buttonRed
             // 
             this.buttonRed.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonRed.Location = new System.Drawing.Point(0, 238);
+            this.buttonRed.Location = new System.Drawing.Point(0, 497);
             this.buttonRed.Name = "buttonRed";
-            this.buttonRed.Size = new System.Drawing.Size(361, 23);
+            this.buttonRed.Size = new System.Drawing.Size(999, 23);
             this.buttonRed.TabIndex = 0;
             this.buttonRed.Text = "Red square - Start - SynchronizationContext";
             this.buttonRed.UseVisualStyleBackColor = true;
@@ -50,9 +51,9 @@
             // buttonBlue
             // 
             this.buttonBlue.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.buttonBlue.Location = new System.Drawing.Point(0, 215);
+            this.buttonBlue.Location = new System.Drawing.Point(0, 474);
             this.buttonBlue.Name = "buttonBlue";
-            this.buttonBlue.Size = new System.Drawing.Size(361, 23);
+            this.buttonBlue.Size = new System.Drawing.Size(999, 23);
             this.buttonBlue.TabIndex = 1;
             this.buttonBlue.Text = "Blue square - Start - Control Invoke";
             this.buttonBlue.UseVisualStyleBackColor = true;
@@ -76,11 +77,22 @@
             this.pictureBoxRed.TabIndex = 3;
             this.pictureBoxRed.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(860, 26);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 261);
+            this.ClientSize = new System.Drawing.Size(999, 520);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBoxRed);
             this.Controls.Add(this.pictureBoxBlue);
             this.Controls.Add(this.buttonBlue);
@@ -99,6 +111,7 @@
         private System.Windows.Forms.Button buttonBlue;
         private System.Windows.Forms.PictureBox pictureBoxBlue;
         private System.Windows.Forms.PictureBox pictureBoxRed;
+        private System.Windows.Forms.Button button1;
     }
 }
 

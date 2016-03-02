@@ -19,7 +19,7 @@ namespace WindowsFormUiUpdate
         {
             for (int i = 0; i < Width; i += 10)
             {
-                this.Invoke(new MethodInvoker(() =>
+                Invoke(new MethodInvoker(() =>
                 {
                     pictureBoxRed.Left = i;
                 }));
@@ -51,6 +51,11 @@ namespace WindowsFormUiUpdate
         {
             var redThread = new Thread(SimpleInvokeExample);
             redThread.Start();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("iza");
         }
     }
 }
