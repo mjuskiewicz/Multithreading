@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfWaitingIndicatorOnTasks.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:WpfWaitingIndicatorOnTasks.ViewModels"
+        xmlns:services="clr-namespace:WpfWaitingIndicatorOnTasks.Services"
+        xmlns:converters="clr-namespace:WpfWaitingIndicatorOnTasks.Converters"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance viewModels:SplashScreenViewModel, IsDesignTimeCreatable=True}"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <converters:BooleanConverter x:Key="BoolToVisibility" True="{x:Static Visibility.Visible }" False="{x:Static Visibility.Collapsed }" />
+        <converters:BooleanConverter x:Key="InvertBoolToVisibility" True="{x:Static Visibility.Collapsed }" False="{x:Static Visibility.Visible }" />
+    </Window.Resources>
+    <Grid Margin="10" >
+        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="The application is reading the data from different sources." VerticalAlignment="Center" Margin="0 0 50 0"/>
+                <Image gif:ImageBehavior.AnimatedSource="./Media/loadingIndicator.gif" Visibility="{Binding IsShowIndicator, Converter={StaticResource BoolToVisibility}}" />
+                <Image Source="./Media/passed.png" Visibility="{Binding IsShowIndicator, Converter={StaticResource InvertBoolToVisibility}}" />
+            </StackPanel>
+            <ListView ItemsSource="{Binding Status}" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
+                      Visibility="{Binding IsShowIndicator, Converter={StaticResource BoolToVisibility}}">
+                <ListView.ItemTemplate>
+                    <DataTemplate DataType="{x:Type services:TaskToExecute}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="{Binding Name}" VerticalAlignment="Center"/>
+                            <Image Grid.Column="1" gif:ImageBehavior.AnimatedSource="./Media/loadingIndicator.gif" Visibility="{Binding IsCompleted, Converter={StaticResource InvertBoolToVisibility}}"/>
+                            <Image Grid.Column="1" Source="./Media/passed.png" Visibility="{Binding IsCompleted, Converter={StaticResource BoolToVisibility}}" />
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label Content="{Binding Message}" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormUiUpdate", "Wind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasksExample", "TasksExample\TasksExample.csproj", "{64A59953-19B6-487F-B573-8FB3390C6299}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfWaitingIndicatorOnTasks", "WpfWaitingIndicatorOnTasks\WpfWaitingIndicatorOnTasks.csproj", "{FEF261A3-7546-4FDC-992F-19F9EB75F30C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{64A59953-19B6-487F-B573-8FB3390C6299}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64A59953-19B6-487F-B573-8FB3390C6299}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64A59953-19B6-487F-B573-8FB3390C6299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEF261A3-7546-4FDC-992F-19F9EB75F30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF261A3-7546-4FDC-992F-19F9EB75F30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF261A3-7546-4FDC-992F-19F9EB75F30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF261A3-7546-4FDC-992F-19F9EB75F30C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,5 +64,6 @@ Global
 		{5E6C20C3-442D-4DBC-8A06-37E9E23056AE} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
 		{46E2A827-D482-46CB-A875-A858A273FC41} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
 		{64A59953-19B6-487F-B573-8FB3390C6299} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
+		{FEF261A3-7546-4FDC-992F-19F9EB75F30C} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
 	EndGlobalSection
 EndGlobal
