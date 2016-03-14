@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfWaitingIndicatorOnTasks"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxCombineLatestExample", "RxCombineLatestExample\RxCombineLatestExample.csproj", "{7984E90F-1176-4EBA-A2A0-003F75D11A64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPaintingWithRx", "WpfPaintingWithRx\WpfPaintingWithRx.csproj", "{F2C21594-C268-4102-83B8-2816D380240A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{7984E90F-1176-4EBA-A2A0-003F75D11A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7984E90F-1176-4EBA-A2A0-003F75D11A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7984E90F-1176-4EBA-A2A0-003F75D11A64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2C21594-C268-4102-83B8-2816D380240A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C21594-C268-4102-83B8-2816D380240A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C21594-C268-4102-83B8-2816D380240A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C21594-C268-4102-83B8-2816D380240A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,5 +78,6 @@ Global
 		{64A59953-19B6-487F-B573-8FB3390C6299} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
 		{FEF261A3-7546-4FDC-992F-19F9EB75F30C} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
 		{7984E90F-1176-4EBA-A2A0-003F75D11A64} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
+		{F2C21594-C268-4102-83B8-2816D380240A} = {568B7385-0028-4532-A0B8-CAACF4C582E1}
 	EndGlobalSection
 EndGlobal
