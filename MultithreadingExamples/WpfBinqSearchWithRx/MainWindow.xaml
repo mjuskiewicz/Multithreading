@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfBingSearchWithRx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:WpfBingSearchWithRx.ViewModels"
+        xmlns:bing="clr-namespace:Bing"
+        mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance viewModels:SearchViewModel, IsDesignTimeCreatable=True}"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <TextBlock Margin="5" Text="{Binding Key, StringFormat='Bing Account Key: {0}'}" />
+        <TextBox Margin="5" Width="200" Text="{Binding SearchTerm, UpdateSourceTrigger=PropertyChanged}" />
+        <ListBox ItemsSource="{Binding ListOfPages}">
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="{x:Type bing:WebResult}">
+                    <StackPanel>
+                        <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="18" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding Description}" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding DisplayUrl}" TextWrapping="Wrap" FontSize="10" />
+                        <TextBlock Text="{Binding Url}" TextWrapping="Wrap" FontSize="9" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </StackPanel>
+</Window>
